@@ -1,0 +1,15 @@
+  
+# dependencies
+node_modules/
+
+# Remove build folder
+build/
+
+#Docker
+Dockerfile
+
+#Asset Files
+*.svg
+
+#linter
+.eslintrc.json
