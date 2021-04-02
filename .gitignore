@@ -1,3 +1,4 @@
+  
 # dependencies
 node_modules/
 
@@ -10,3 +11,5 @@ Dockerfile
 #Asset Files
 *.svg
 
+#linter
+.eslintrc.json
