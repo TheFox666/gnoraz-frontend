@@ -1,5 +1,5 @@
-import { connect, styled } from "frontity";
-import Link from "../Link";
+import { connect, styled } from 'frontity';
+import Link from '../Link';
 
 const List = ({ state }) => {
   const data = state.source.get(state.router.link);

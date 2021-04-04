@@ -6,9 +6,9 @@ export const getMedia = (state) => (id) => {
       .reduce(
         (final, current, index, array) =>
           final.concat(
-            `${current.join(" ")}w${index !== array.length - 1 ? ", " : ""}`
+            `${current.join(' ')}w${index !== array.length - 1 ? ', ' : ''}`,
           ),
-        ""
+        '',
       ) || null;
   return { media, srcset };
 };

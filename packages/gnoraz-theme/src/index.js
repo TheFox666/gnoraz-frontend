@@ -1,10 +1,10 @@
-import image from "@frontity/html2react/processors/image";
-import iframe from "@frontity/html2react/processors/iframe";
-import link from "@frontity/html2react/processors/link";
-import Root from "./components/Theme/index";
+import image from '@frontity/html2react/processors/image';
+import iframe from '@frontity/html2react/processors/iframe';
+import link from '@frontity/html2react/processors/link';
+import Root from './components/Theme/index';
 
 const theme = {
-  name: "gnoraz-theme",
+  name: 'gnoraz-theme',
   roots: {
     /**
      * In Frontity, any package can add React components to the site.
@@ -18,7 +18,7 @@ const theme = {
      * relevant state. It is scoped to the `theme` namespace.
      */
     theme: {
-      autoPrefetch: "in-view",
+      autoPrefetch: 'in-view',
       menu: [],
       isMobileMenuOpen: false,
       featured: {

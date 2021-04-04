@@ -1,4 +1,4 @@
-import { connect } from "frontity";
+import { connect } from 'frontity';
 
 const Post = ({ state }) => {
   const data = state.source.get(state.router.link);

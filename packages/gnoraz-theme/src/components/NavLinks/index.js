@@ -1,6 +1,6 @@
-import { connect } from "frontity";
-import Link from "../Link";
-import { NavContainer, NavItem } from "./styles";
+import { connect } from 'frontity';
+import Link from '../Link';
+import { NavContainer, NavItem } from './styles';
 
 /**
  * Navigation Component
@@ -15,7 +15,7 @@ const NavLinks = ({ state }) => (
       return (
         <NavItem key={name}>
           {/* If link url is the current page, add `aria-current` for a11y */}
-          <Link link={link} aria-current={isCurrentPage ? "page" : undefined}>
+          <Link link={link} aria-current={isCurrentPage ? 'page' : undefined}>
             {name}
           </Link>
         </NavItem>

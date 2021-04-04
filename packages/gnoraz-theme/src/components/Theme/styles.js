@@ -1,13 +1,13 @@
-import { styled, css } from "frontity";
-import { Container, Col } from "react-bootstrap";
+import { styled, css } from 'frontity';
+import { Container, Col } from 'react-bootstrap';
 
 export const globalStyles = css`
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #121212;
-    color: #fff;
+    color: #cccccc;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -21,10 +21,13 @@ export const globalStyles = css`
 export const ContainerMaxWidth = styled(Container)`
   max-width: 1200px;
   justify: center;
-  background-color: #202020;
+  background-color: #161616;
+  border-radius: 3px;
+  border: 3px solid #161616;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
 export const ColP10 = styled(Col)`
-  border: 5px solid #000; /*Color of the Background*/
-  background-color: #202020;
+  border: 5px solid #161616; /*Color of the Background*/
+  justify-content: center;
 `;

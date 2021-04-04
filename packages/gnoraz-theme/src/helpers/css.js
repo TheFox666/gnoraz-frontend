@@ -6,5 +6,5 @@ const nthLastChildToNthLastChildType = (css) =>
 
 export const fixCss = (css) =>
   nthLastChildToNthLastChildType(
-    firstChildToFirstOfType(nthChildToNthChildType(css))
+    firstChildToFirstOfType(nthChildToNthChildType(css)),
   );

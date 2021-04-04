@@ -1,4 +1,4 @@
-import { styled } from "frontity";
+import { styled } from 'frontity';
 
 export const NavContainer = styled.nav`
   list-style: none;
@@ -31,11 +31,11 @@ export const NavItem = styled.div`
     position: relative;
     transition: all 0.15s ease-out;
     /* Use for semantic approach to style the current link */
-    &[aria-current="page"] {
+    &[aria-current='page'] {
       border-bottom-color: #707070;
     }
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       width: 100%;
       height: 2px;
