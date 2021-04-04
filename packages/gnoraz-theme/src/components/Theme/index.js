@@ -1,15 +1,20 @@
-import { connect, Global, Head, css } from "frontity";
-import { Row } from "react-bootstrap";
+import { connect, Global, Head, css } from 'frontity';
+import { Row, Container } from 'react-bootstrap';
 
-import bootstrapCss from "bootstrap/dist/css/bootstrap.min.css";
-import { fixCss } from "../../helpers/css";
+import bootstrapCss from 'bootstrap/dist/css/bootstrap.min.css';
+import { fixCss } from '../../helpers/css';
 
-import { globalStyles, ContainerMaxWidth, ColP10 } from "./styles";
+import { globalStyles, ContainerMaxWidth, ColP10 } from './styles';
 
-import List from "../List";
-import Post from "../Post";
-import Page from "../Page";
-import Navigation from "../Navigation";
+import List from '../List';
+import Post from '../Post';
+import Page from '../Page';
+import {
+  DiscordFeatureCard,
+  TwitchFeatureCard,
+  MerchFeatureCard,
+} from '../FeatureCards';
+import Navigation from '../Navigation';
 
 const fixedBootstrapCss = fixCss(bootstrapCss);
 const BootstrapStyles = () => <Global styles={css(fixedBootstrapCss)} />;
@@ -34,7 +39,15 @@ const Root = ({ state }) => {
           <ColP10>blah</ColP10>
         </Row>
         <Row xs={12}>
-          <ColP10>Zweite Zeile</ColP10>
+          <ColP10>
+            <DiscordFeatureCard />
+          </ColP10>
+          <ColP10>
+            <TwitchFeatureCard />
+          </ColP10>
+          <ColP10>
+            <MerchFeatureCard />
+          </ColP10>
         </Row>
         <Row xs={12}>
           <ColP10>Dritte Zeile</ColP10>
@@ -73,7 +86,9 @@ const Root = ({ state }) => {
             {/* </Main> */}
           </ColP10>
         </Row>
-        <Row xs={12}> Footer</Row>
+        <Row xs={12}>
+          <ColP10>Footer</ColP10>
+        </Row>
       </ContainerMaxWidth>
     </>
   );
