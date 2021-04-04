@@ -74,7 +74,7 @@ export const MerchFeatureCard = () => {
         </Card.Text>
         <ButtonSt
           variant="primary"
-          href="https://twitch.tv/gnoraz"
+          href="https://www.getshirts.de/index.php?page=shop&id=gnoraz"
           target="_blank"
         >
           Zum Shop
